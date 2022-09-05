@@ -1,0 +1,573 @@
+
+
+/*Светлая тема*/
+.light-theme {
+    background-color: #D7D7D7;
+    
+    }
+
+.light-theme .page-header {
+    background-color: #2D2F34;
+   }
+
+.light-theme input[type="search"] {
+  -webkit-appearance: none;
+  color: rgb(255, 255, 255, 0.65);
+   background-color: #383B40;
+   border-radius: 5px;
+  }
+
+.light-theme .book,
+.light-theme .reader .container, 
+.light-theme .annotation-card,
+.light-theme .annotation-text,
+.light-theme .registration .reg-form {
+    background-color: #F1F1F1;
+    border: 1px solid #C8C8C8; 
+    }
+
+.light-theme .main .books .book-button,
+.light-theme .comment-form button,
+.light-theme .annotation-card-subs .book-button,
+.light-theme .annotation-card-subs .book-price .book-icon,
+.light-theme .reader .paginator .page a,
+.light-theme .reader .paginator .next a,
+.light-theme .reader .paginator .prev a,
+.light-theme .reader .paginator .hellip,
+.light-theme .registration .reg-form .submit-button {
+    background-color: #B9B9B9;
+    color: rgb(255,255,255,0.9);
+    }
+    
+.theme-button  {
+    background-color: #AEB1DD;
+    }
+
+    .theme-button:active a {
+      color: rgb(255, 255, 255, 0.65);
+    }
+
+
+.light-theme .page-header a,
+.light-theme .footer a,
+.light-theme .main .page-header .top-panel a {
+    color: #FFFFFF;
+    filter: opacity(90%) contrast(12);
+    }
+
+.light-theme .annotation-card-subs .book-price .book-icon a {
+color: rgb(255,255,255,0.9);
+    }
+ 
+.light-theme .book-heading,
+.light-theme .book-category .icon-tag,
+.light-theme .book-price span,
+.light-theme p,
+.light-theme .book-raiting,
+.light-theme .add-to-library,
+.light-theme  time,
+.light-theme .reader .controls .settings span,
+.light-theme .breadcrumbs a,
+.light-theme .signup-heading {
+    color: #000000;
+    filter: opacity(60%) contrast(5.83);
+    }        
+
+.light-theme .main .footer {
+    background-color: #2D2F34;
+    color: rgb(255, 255, 255, 0.65);
+}
+
+.light-theme .main .books .book .book-button:hover,
+.light-theme .annotation-card-subs .book-price .book-button:hover,
+.light-theme .annotation-card-subs .book-price .book-icon:hover,
+.light-theme .comment-form button:hover,
+.light-theme .reader .controls .contents .select:hover,
+.light-theme .registration .reg-form .submit-button:hover {
+    background-color: #AEB1DD;
+    cursor: pointer;
+}
+
+.light-theme .theme-button:hover  {
+    background-color: #cfd1ec;
+    cursor: pointer;
+}
+
+.light-theme .main .books .book-button:active,
+.light-theme .annotation-card-subs .book-price .book-icon:active a,
+.light-theme .comment-form button:active,
+.light-theme .annotation-card-subs .book-button:active,
+.light-theme .reader .paginator .page:active a, 
+.light-theme .reader .paginator .next:active a,
+.light-theme .reader .paginator .prev:active a,
+.light-theme .reader .paginator .hellip:active,
+.light-theme .registration .reg-form .submit-button:active  {
+    color: rgb(0,0,0,0.65);
+  }
+
+  .light-theme .reader .paginator .page  a.current,
+  .light-theme .reader .paginator span.current {
+    background-color: #A0A4D9;
+  }
+
+.light-theme .book-meta .book-category span:last-child {  
+    color: rgb(66, 152, 185, 0.85);
+    }
+
+    .light-theme .up-button {
+        color: #2D2F34;
+        border-color: #2D2F34;
+        background: rgb(255,255,255,0.9);
+      }
+    
+    .light-theme .up-button:hover {
+        color: #AEB1DD;
+        border-color: #AEB1DD;
+    }
+
+
+
+    .light-theme .user-comment::before {
+        border-right-color: #383B40;
+        color: #cdcdcd;
+      }
+
+      
+.light-theme .user-comment::after {
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
+  }
+
+  .light-theme .user-comment:not(:first-child)::after {
+    animation: comment-blink-light-after 600ms ease-in;
+  }
+
+
+  .light-theme .comment-list li {
+    background-color: #F1F1F1;
+  }
+
+  .light-theme .user-comment::after {
+    background-image: linear-gradient(to right bottom,#D7D7D7 50%, #F1F1F1 50%);
+  }
+
+  
+  .light-theme .user-comment:not(:first-child)::after {
+    animation: comment-blink-dark-after 600ms ease-in;
+  }
+
+    
+  .light-theme .comment-field:focus,
+  .light-theme  .name:focus,
+  .light-theme  .email:focus,
+  .light-theme  .password:focus  {
+    outline-color: #A0A4D9;
+  }
+
+  .light-theme .comment-form {
+    background-color: #F1F1F1;
+  }
+
+  .light-theme .comment-field,
+  .light-theme  .name,
+  .light-theme  .email,
+  .light-theme  .password  {
+    border: 1px solid #AEB1DD;
+    color: rgb(0,0,0,0.65);
+  }
+
+  .light-theme .security {
+    background-color: #B9B9B9;
+  }
+
+  .light-theme .security::before {
+  background-color: #F1F1F1;
+  }
+
+  .light-theme .security::after {
+    background-color: #F1F1F1;
+    }
+
+  .light-theme .security-bar {
+      background-color: #AEB1DD;
+       }
+
+  .light-theme .checkbox-label {
+    color: rgb(0,0,0,0.65);
+  }
+
+  .light-theme .checkbox-label::before {
+    border-color:  #AEB1DD;
+  }
+
+  .light-theme .show-password:checked + .checkbox-label::before{
+    background-color: #B9B9B9;
+  }
+
+  .light-theme .comment-inner .comment-label,
+  .light-theme .login-label,
+  .light-theme .email-label,
+  .light-theme .password-label {
+    color:rgb(0,0,0,0.65);
+    background-color: #F1F1F1;
+    z-index: 10;
+  }
+  
+  .light-theme .heart {
+    background-image: url(../img/light-theme-heart.svg);
+  }
+  
+  .light-theme .heart.added {
+    background-image: url(../img/light-theme-heart-added.svg);
+  }
+
+  .light-theme .heart.added .likes-number {
+    color: red;
+  }
+
+  .light-theme .reader .paginator a,
+  .light-theme .reader .paginator span {
+    background-color: #B9B9B9;
+  }
+
+  .light-theme .reader .paginator a:hover,
+  .light-theme .reader .paginator span:hover {
+    background-color: #A0A4D9;
+  } 
+
+
+  .light-theme .reader .controls .contents .select {
+    border: 1px solid #ced4da;
+    color: rgb(255,255,255,0.9);
+      background: #B9B9B9 url(../img/arrow-down-light.svg) 145px 9px no-repeat;
+      
+  }
+  
+  .light-theme .breadcrumbs a:not(:last-child)::after {
+
+    background-image: url(../img/arrow-left-light.svg);
+  }
+
+
+  .light-theme input[type=range]::-webkit-slider-runnable-track {
+    background: #b9b9b9;
+  }
+  .light-theme input[type=range]::-webkit-slider-thumb {
+    background: rgba(255, 255, 255, 0.65);
+    border: 1.9px solid rgba(0, 30, 0, 0.57);
+  }
+  .light-theme input[type=range]::-webkit-slider-runnable-track {
+    background: #b9b9b9;
+  }
+  .light-theme input[type=range]::-moz-range-track {
+    background: #b9b9b9;
+  }
+  .light-theme input[type=range]::-moz-range-thumb {
+    background: rgba(255, 255, 255, 0.65);
+    border: 1.9px solid rgba(0, 30, 0, 0.57);
+  }
+  .light-theme input[type=range]::-ms-fill-lower {
+    background: #b9b9b9;
+  }
+  .light-theme input[type=range]::-ms-fill-upper {
+    background: #b9b9b9;
+
+  }
+  .light-theme input[type=range]::-ms-thumb {
+    background: rgba(255, 255, 255, 0.65);
+    border: 1.9px solid rgba(0, 30, 0, 0.57);
+  }
+
+
+  .light-theme input[type=range]::-webkit-slider-thumb:active {
+    background: #A0A4D9;
+    border: 1.9px solid rgba(0, 30, 0, 0.57);
+  }
+
+
+
+/*Тёмная тема*/
+.dark-theme {
+    background-color: #1F2023;
+    }
+
+.dark-theme .main .page-header {
+    background-color: #2D2F34;
+    }
+      
+.dark-theme input[type="search"] {
+    -webkit-appearance: none;
+   color: #FFFFFF;
+    background-color: #383B40;
+    border-radius: 5px;
+  }
+
+
+.dark-theme .book,
+.dark-theme .reader .container,
+ .dark-theme .annotation-card,
+ .dark-theme .annotation-text,
+ .dark-theme .registration .reg-form {
+background-color: #27292D;
+ border: 1px solid #383B40; 
+ }
+
+.dark-theme .main .books .book .book-button,
+.dark-theme .annotation-card-subs .book-price .book-button,
+.dark-theme .theme-button,
+.dark-theme .comment-form button,
+.dark-theme .annotation-card-subs .book-price .book-icon,
+.dark-theme .reader .paginator .page a,
+.dark-theme .reader .paginator .next a,
+.dark-theme .reader .paginator .prev a,
+.dark-theme .reader .paginator .hellip,
+.dark-theme .registration .reg-form .submit-button {
+    background-color: #A0A4D9;
+    color: rgb(0,0,0,0.65);
+}
+
+.dark-theme .reader .controls .contents .select {
+ 
+  color: rgb(0,0,0,0.65);
+  background: #A0A4D9 url("img/arrow-down-dark.svg") 145px 9px no-repeat;
+  }
+
+.dark-theme .annotation-card-subs .book-price .book-icon a {
+  color:  rgb(0,0,0,0.65);
+}
+
+.dark-theme .main .books .book-button:active,
+.dark-theme .annotation-card-subs .book-price .book-icon:active a,
+.dark-theme .comment-form button:active,
+.dark-theme .annotation-card-subs .book-button:active,
+.dark-theme .reader .paginator .page:active a, 
+.dark-theme .reader .paginator .next:active a,
+.dark-theme .reader .paginator .prev:active a,
+.dark-theme .reader .paginator .hellip:active,
+.dark-theme .registration .reg-form .submit-button:active  {
+  color: rgb(255, 255, 255, 0.65);
+}
+
+.dark-theme .reader .paginator .page  a.current,
+.dark-theme .reader .paginator span.current {
+  background-color: #cfd1ec;
+}
+    
+
+.dark-theme .book-heading,  
+.dark-theme .book-category .icon-tag,
+.dark-theme .annotation .add-to-library a,
+.dark-theme p,
+.dark-theme .book-raiting,
+.dark-theme  time,
+.dark-theme .book-raiting .heart .likes-number,
+.dark-theme .reader .book-content .container p,
+.dark-theme .reader .chapter-content .container p,
+.dark-theme .breadcrumbs a,
+.dark-theme .signup-heading {
+    color: #FFFFFF;
+    filter: opacity(65%) contrast(7.2);
+}
+
+.dark-theme figcaption {
+    border-top: 1px solid #383B40;
+}
+
+
+.dark-theme .book-price span,
+.dark-theme .reader .controls .settings span
+ {
+    color: #FFFFFF;
+    filter: opacity(65%) contrast(7.2);
+}
+
+.dark-theme .book-meta .book-category span:last-child {  
+color: rgb(66, 152, 185, 0.85);
+}
+
+.dark-theme .main .footer {
+    background-color: #2D2F34;
+    color: #FFFFFF;
+}
+
+
+.dark-theme .main .books .book .book-button :hover,
+.dark-theme .annotation-card-subs .book-price .book-button:hover,
+.dark-theme .theme-button:hover,
+.dark-theme .annotation-card-subs .book-price .book-icon:hover,
+.dark-theme .comment-form button:hover,
+.dark-theme .reader .paginator a:hover,
+.dark-theme .reader .paginator span:hover,
+.dark-theme .reader .controls .contents .select:hover  {
+    background-color: #cfd1ec;
+    cursor: pointer;
+}
+
+.dark-theme .up-button {
+    color: #A0A4D9;
+    border-color: #A0A4D9;
+    background: rgb(255,255,255,0.9);
+  }
+
+.dark-theme .up-button:hover {
+    color: #cfd1ec;
+    border-color: #cfd1ec;
+}
+
+
+
+.dark-theme .comment-list li {
+    background-color: #27292D;
+    
+  }
+  
+  .dark-theme .user-comment:not(:first-child) {
+    animation: comment-blink-dark 600ms ease-in;
+  }
+  
+  .dark-theme .user-comment::before {
+    border-right-color: #383B40;
+    color: rgb(255,255,255,0.65);
+  }
+
+  
+  .dark-theme .user-comment::after {
+    background-image: linear-gradient(to right bottom, #1F2023 50%, #27292D 50%);
+  }
+
+  .dark-theme .comment-list .user-comment {
+    color: rgb(255,255,255,0.65);
+    
+  }
+  
+  .dark-theme .user-comment:not(:first-child)::after {
+    animation: comment-blink-dark-after 600ms ease-in;
+  }
+
+    
+  .dark-theme .comment-field:focus,
+  .dark-theme .name:focus,
+  .dark-theme .email:focus,
+  .dark-theme .password:focus {
+    outline-color: #A0A4D9;
+  }
+
+  .dark-theme .comment-form {
+    background-color:  #27292D;
+  }
+
+  .dark-theme .comment-field,
+  .dark-theme .name,
+  .dark-theme .email,
+  .dark-theme .password {
+    border: 1px solid #A0A4D9;
+    color: rgb(255,255,255,0.65);
+  }
+
+  .dark-theme .security {
+    background-color:  #A0A4D9;
+  }
+
+  .dark-theme .security::before {
+  background-color: #27292D;
+  }
+
+  .dark-theme .security::after {
+    background-color: #27292D;
+    }
+
+  .dark-theme .security-bar {
+     background-color: #cfd1ec;
+      }
+
+  .dark-theme .checkbox-label, 
+  .dark-theme .checkbox-label::before  {
+    color: rgb(255,255,255,0.65);
+    }
+
+    .dark-theme .show-password:checked + .checkbox-label::before{
+      background-color: #A0A4D9;
+    }
+
+
+  .dark-theme .comment-inner .comment-label,
+  .dark-theme .login-label,
+  .dark-theme .email-label,
+  .dark-theme .password-label {
+    color: #A0A4D9;
+    background-color: #27292D;
+    z-index: 10;
+  }
+
+  .dark-theme .heart {
+    background-image: url(../img/dark-theme-heart.svg);
+  }
+
+  .dark-theme .heart:hover {
+    background-image: url(../img/dark-theme-heart.svg);
+    
+  }
+  
+  .dark-theme .heart.added {
+    background-image: url(../img/dark-theme-heart-added.svg);
+
+  }
+
+
+  .dark-theme .reader .paginator a,
+  .dark-theme .reader .paginator span {
+    background-color: #A0A4D9;
+  }
+  
+
+  .dark-theme .breadcrumbs a:not(:last-child)::after {
+    background-image: url(../img/arrow-left-dark.svg);
+  }
+
+
+  .dark-theme input[type=range]::-webkit-slider-runnable-track {
+    background: #27292D;
+  
+  }
+  .dark-theme input[type=range]::-webkit-slider-thumb {
+    background: #A0A4D9;
+    border: 1px solid#383B40;
+  }
+  .dark-theme input[type=range]::-webkit-slider-runnable-track {
+    background: #27292D;
+  }
+  .dark-theme input[type=range]::-moz-range-track {
+    background:#27292D;
+  }
+  .dark-theme input[type=range]::-moz-range-thumb {
+    background: #A0A4D9;
+    border: 1.9px solid #383B40;
+  }
+  .dark-theme input[type=range]::-ms-fill-lower {
+    background: #27292D;
+  }
+  .dark-theme input[type=range]::-ms-fill-upper {
+    background: #27292D;
+
+  }
+  .dark-theme input[type=range]::-ms-thumb {
+    background: #A0A4D9;
+    border: 1.9px solid #383B40;
+  }
+
+  .dark-theme input[type=range]::-webkit-slider-thumb:active {
+    background: #cfd1ec;
+    border: 1.9px solid rgba(0, 30, 0, 0.57);
+  }
+
+
+
+
+
+
+
+  
+
+
+
+

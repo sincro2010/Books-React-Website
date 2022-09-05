@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="theme.css">
+<link rel="stylesheet" href="style.css">
+<title>Читать книги онлайн</title>
+</head>
+
+<body class="page light-theme">
+	<div class="main">
+	<div class="page-header">
+	<div class="nav">
+		<ul class="main-menu">
+			<li class="top"><a href="#">Главная</a></li>
+			<li class="open"> <a href="#">Виктория ОМ</a>
+				<ul class="sub-menu">
+					<li><a href="#">Замуж за коня</a></li>
+					<li><a href="#">Хозяин проклятого поместья</a></li>
+					<li><a href="#">Месть Анны-Луизы</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Моя библиотека</a></li>
+		</ul>
+	</div>
+
+	<div class="top-panel">
+		<form action="" method="POST">
+			<input type="search" name="search" id="search" placeholder="Найти">
+		</form>
+	<a href="/registration">Регистрация/</a>
+	<a href="/login">Вход</a>
+	<button class="theme-button" type="button">Изменить тему</button>
+	</div>
+    </div>
+    
+    <div class="breadcrumbs">
+		<a href="#">Главная</a>
+		<a class="active" href="#">Замуж за коня</a>
+		<a href="#">1 (не) доброе утро</a>
+	  </div>
+
+
+   <div class="annotation">
+
+       <div class="annotation-block annotation-card">
+
+            <div class="annotation-features annotation-card-picture">
+                <img class="book-img" src="img/Kon-big.jpg" alt="Замуж за коня">
+            </div>
+
+            <div class="annotation-features  annotation-card-subs">
+                <div class="book-meta">
+                    <h2 class="book-heading">Замуж за коня</h2>
+                    <div class="book-category">
+                        <span class="icon-tag">Категория: </span>
+                        <span>властный герой, дерзкая героиня, муж и жена</span>
+                    </div>
+                </div>
+                <div class="book-price">
+                    <button class="book-button">Подписка 109 RUB</button>
+                    <div class="book-icon">
+                    <a href="#">Читать</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="annotation-features annotation-card-stats">
+                <div class="book-raiting">
+                    Рейтинг:
+                    <button class="heart" type="button"><span class="likes-number">9</span></button>
+                </div>
+                    <time datetime="2019-12-22">Публикация: 22 декабря 2019</time>
+                <div class="add-to-library">
+                    <a href="#">Добавить в библиотеку</a>        
+                </div>
+            </div>
+                
+            
+        </div>
+
+       <section class="annotation-block  annotation-text">
+            <h2 class="book-heading">Аннотация к книге "Замуж за коня"</h2>
+            <p>Знаете, как быстро выйти замуж? Разозлите отца, будьте откровенны с мачехой, откажите всем приличным женихам в городе и потеряйте волю, когда вам предложат немыслимый вариант: КОНЯ! Но не обычного, а разумного. С документами и должностью при дворе. А переехав в столицу, молчите о том, кто на самом деле ваш муж, если планируете выйти во второй раз: век коней недолог, а вам, может, и детей завести захочется от нормального мужчины. Но главное, не делите секрет с королём! Это может стоить чести и сократит варианты мужей до одной коронованной особы.</p>
+        </section>
+
+
+        <section class="annotation-block  comment-block">
+            <h2 class="book-heading">Комментарии</h2>
+            <ol class="comment-list">
+                <li class="user-comment">Коту понравилась книга</li>
+            </ol>
+            <form action="http://127.0.0.1:5500/annotation.html" method="post" class="comment-form">
+                <div class="comment-inner">
+                    <label class="comment-label" for="comment-input">Ваш комментарий</label>
+                    <input type="text" class="comment-field" placeholder="Комментарий" required id="comment-input">
+                </div>
+                <button class="comment-submit-button" type="submit">Отправить</button>
+            </form>
+        </section>
+   </div>
+
+
+
+<div class="footer">
+	<div class="contacts">
+		<div class="title">Обратная связь</div>
+		<div class="item">
+		  <div class="icon icon-phone"></div>
+		  <div class="number">+7 (777) 777-33-22</div>
+		</div>
+		<div class="item">
+		  <div class="icon icon-email"></div>
+		  <a href="https://vk.com/id1298512">vk.com/id1298512</a>
+		</div>
+	</div>	
+		<div class="share">
+		<div class="title">Соцсети</div>
+		<a class="social social-vk" href="https://vk.com/miriadi_mirov"></a>
+		<a class="social social-fb" href="https://www.facebook.com/viktoriaomBooks"></a>
+		<a class="social social-tw" href="https://twitter.com/viktoria_om"></a>
+		<a class="social social-tg" href="https://t.me/viktoriaom_fantesy"></a>
+		<a class="social social-ig" href="https://www.instagram.com/viktoriaom_fantasy"></a>
+	  </div>
+
+	  </div>
+	
+</div>
+
+</div>
+<button class="up-button" type="button">
+    ↑
+    <span class="visually-hidden">Наверх</span>
+  </button>
+
+<script src="theme.js"></script>
+<script src="navbar-button.js"></script>
+<script src="up-button.js"></script>
+<script src="read-mode.js"></script>
+<script src="comments.js"></script>
+<script src="likes.js"></script>
+
+</body>
+</html>
