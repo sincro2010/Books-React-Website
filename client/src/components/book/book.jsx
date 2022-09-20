@@ -37,12 +37,14 @@ const Book = (props) => {
         <figure className="book-figure">
 		        <Link to={getBook(id)}>
           		<img className="book-img" src={image} width={`${BooksSettings[bookName].image.width}`} height={`${BooksSettings[bookName].image.height}`} alt={title}/>
-										</Link>
+						</Link>
           <figcaption>
             <p>{description}</p>
           </figcaption>
         </figure>
-        <button className="book-button"><Link to={getBook(id)}>{title}</Link></button>
+        <div className="book-button">
+          <Link to={getBook(id)}>{title}</Link>
+        </div>
       </div>
     </article>
   );

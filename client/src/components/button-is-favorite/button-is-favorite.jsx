@@ -85,13 +85,18 @@ const ButtonIsFavorite = (props) => {
       onClick ({
         id,
         isFavorite: Number(!isFavorite),
+        title,
+        tags,
+        image,
+        price,
+        description,
+        isSubscription,
+        rating
         
       });
       addToFavorites();
     }
   }
-
-  console.log( Number(isFavorite), id);
 
 
   const bookmarkText = isFavorite ? `Убрать из библиотеки` : `Добавить в библиотеку`;

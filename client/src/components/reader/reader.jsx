@@ -246,24 +246,22 @@ return (
 <Header />
   
   <div className="breadcrumbs">
-  <Link to={AppRoute.MAIN}>Главная</Link>
-  <Link to={getBook(bookId)}>{book.title}</Link>
-  <Link className="active" to={getBookReader(id)}>{chapterTitle}</Link>
+    <Link to={AppRoute.MAIN}>Главная</Link>
+    <Link to={getBook(bookId)}>{book.title}</Link>
+    <Link className="active" to={getBookReader(id)}>{chapterTitle}</Link>
   </div>
 
   <div className="reader">
       <div className="controls">
           <div className="settings contents">
-              <label>Оглавление:
-                  <select name="content" onChange={handleChapterChange}>
-                      <TableOfContents reader={reader} />
-                  </select>
-              </label>
+             <label htmlFor="select">Оглавление:</label>
+              <select name="content" onChange={handleChapterChange} id="select">
+                  <TableOfContents reader={reader} />
+              </select>
           </div>
       <div className="settings size">
-          <label> Размер текста: (<output name="pixels" className="pixels">{`${rangeForm.value}`}</output>px)
-              <input name="sizesetting" className="size-setting" type="range" min="8" max="48" step="1" value={rangeForm.value} onChange={handleFontSizeChange}/>
-          </label>          
+          <label>Размер текста: (<output name="pixels" htmlFor="range" className="pixels">{`${rangeForm.value}`}</output>px)</label> 
+          <input name="sizesetting" className="size-setting" type="range" min="8" max="48" step="1" id="range" value={rangeForm.value} onChange={handleFontSizeChange}/>             
       </div>
   </div>
 

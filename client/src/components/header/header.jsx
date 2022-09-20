@@ -32,9 +32,8 @@ const handleUserLogout = () => {
 };
 
 const handleChangeTheme = (theme) => {
-
-theme = "dark-theme" ;
-	SetTheme(theme);
+	 theme= "light-theme" ? "dark-theme" : "light-theme";
+		SetTheme(theme);
 };
 
 	return (
@@ -69,7 +68,7 @@ theme = "dark-theme" ;
 								<button className="theme-button" onClick={handleUserLogout}>Выход</button>
 						</>
 				  : <Link to={AppRoute.LOGIN}>Вход</Link>
-    };
+    }
 				<button className="theme-button" type="button"  onClick={handleChangeTheme}>Изменить тему</button>
 			</div>
 		</div>

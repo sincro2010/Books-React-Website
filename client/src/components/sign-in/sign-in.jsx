@@ -31,7 +31,7 @@ const SignIn = (props) => {
 
 
 return (
-  <div className="page light-theme">
+  <div className="page">
     <div className="main">
       <Header />
       <div className="registration">

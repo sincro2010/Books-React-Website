@@ -120,7 +120,7 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         favoriteBooks: changeFavoriteBooks(state.favoriteBooks, action.payload),
-        books: updateBooks(state.books, action.payload),
+       
       };
 
     case ActionType.CHANGE_IS_FAVORITE_BOOK:

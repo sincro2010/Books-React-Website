@@ -3,7 +3,6 @@
 /*Светлая тема*/
 .light-theme {
     background-color: #D7D7D7;
-    
     }
 
 .light-theme .page-header {
@@ -26,15 +25,12 @@
     border: 1px solid #C8C8C8; 
     }
 
-.light-theme .main .books .book-button,
+.light-theme .main .book .book-button,
 .light-theme .comment-form button,
 .light-theme .annotation-card-subs .book-button,
 .light-theme .annotation-card-subs .book-price .book-icon,
-.light-theme .reader .paginator .page a,
-.light-theme .reader .paginator .next a,
-.light-theme .reader .paginator .prev a,
-.light-theme .reader .paginator .hellip,
-.light-theme .registration .reg-form .submit-button {
+.light-theme .registration .reg-form .submit-button,
+.light-theme .reader .paginator a {
     background-color: #B9B9B9;
     color: rgb(255,255,255,0.9);
     }
@@ -55,19 +51,22 @@
     filter: opacity(90%) contrast(12);
     }
 
-.light-theme .annotation-card-subs .book-price .book-icon a {
-color: rgb(255,255,255,0.9);
-    }
+.light-theme .annotation-card-subs .book-price .book-icon a,
+.light-theme .book-content .book-button a {
+  color: rgb(255,255,255,0.9);
+}
  
 .light-theme .book-heading,
 .light-theme .book-category .icon-tag,
 .light-theme .book-price span,
 .light-theme p,
 .light-theme .book-raiting,
-.light-theme .add-to-library,
-.light-theme  time,
+.light-theme .add-to-library a,
+.light-theme time,
 .light-theme .reader .controls .settings span,
 .light-theme .breadcrumbs a,
+.light-theme .contents label,
+.light-theme .size label,
 .light-theme .signup-heading {
     color: #000000;
     filter: opacity(60%) contrast(5.83);
@@ -78,11 +77,11 @@ color: rgb(255,255,255,0.9);
     color: rgb(255, 255, 255, 0.65);
 }
 
-.light-theme .main .books .book .book-button:hover,
+.light-theme .main .book .book-button:hover,
 .light-theme .annotation-card-subs .book-price .book-button:hover,
 .light-theme .annotation-card-subs .book-price .book-icon:hover,
 .light-theme .comment-form button:hover,
-.light-theme .reader .controls .contents .select:hover,
+.light-theme .reader .controls .contents select:hover,
 .light-theme .registration .reg-form .submit-button:hover {
     background-color: #AEB1DD;
     cursor: pointer;
@@ -93,14 +92,11 @@ color: rgb(255,255,255,0.9);
     cursor: pointer;
 }
 
-.light-theme .main .books .book-button:active,
+.light-theme .main .book .book-button:active a,
 .light-theme .annotation-card-subs .book-price .book-icon:active a,
 .light-theme .comment-form button:active,
 .light-theme .annotation-card-subs .book-button:active,
-.light-theme .reader .paginator .page:active a, 
-.light-theme .reader .paginator .next:active a,
-.light-theme .reader .paginator .prev:active a,
-.light-theme .reader .paginator .hellip:active,
+.light-theme .reader .paginator a:active,
 .light-theme .registration .reg-form .submit-button:active  {
     color: rgb(0,0,0,0.65);
   }
@@ -236,7 +232,7 @@ color: rgb(255,255,255,0.9);
   } 
 
 
-  .light-theme .reader .controls .contents .select {
+  .light-theme .reader .controls .contents select {
     border: 1px solid #ced4da;
     color: rgb(255,255,255,0.9);
       background: #B9B9B9 url(../img/arrow-down-light.svg) 145px 9px no-repeat;
@@ -273,7 +269,7 @@ color: rgb(255,255,255,0.9);
     background: #b9b9b9;
 
   }
-  .light-theme input[type=range]::-ms-thumb {
+  .light-theme  input[type=range]::-ms-thumb {
     background: rgba(255, 255, 255, 0.65);
     border: 1.9px solid rgba(0, 30, 0, 0.57);
   }
@@ -284,8 +280,7 @@ color: rgb(255,255,255,0.9);
     border: 1.9px solid rgba(0, 30, 0, 0.57);
   }
 
-
-
+  
 /*Тёмная тема*/
 .dark-theme {
     background-color: #1F2023;
@@ -308,8 +303,8 @@ color: rgb(255,255,255,0.9);
  .dark-theme .annotation-card,
  .dark-theme .annotation-text,
  .dark-theme .registration .reg-form {
-background-color: #27292D;
- border: 1px solid #383B40; 
+    background-color: #27292D;
+    border: 1px solid #383B40; 
  }
 
 .dark-theme .main .books .book .book-button,
@@ -317,38 +312,24 @@ background-color: #27292D;
 .dark-theme .theme-button,
 .dark-theme .comment-form button,
 .dark-theme .annotation-card-subs .book-price .book-icon,
-.dark-theme .reader .paginator .page a,
-.dark-theme .reader .paginator .next a,
-.dark-theme .reader .paginator .prev a,
-.dark-theme .reader .paginator .hellip,
-.dark-theme .registration .reg-form .submit-button {
+.dark-theme .registration .reg-form .submit-button,
+.dark-theme .reader .paginator a {
     background-color: #A0A4D9;
     color: rgb(0,0,0,0.65);
 }
 
-.dark-theme .reader .controls .contents .select {
- 
+.dark-theme  .reader .controls .contents select  {
   color: rgb(0,0,0,0.65);
-  background: #A0A4D9 url("img/arrow-down-dark.svg") 145px 9px no-repeat;
+  background: #A0A4D9 url(../img/arrow-down-dark.svg) 145px 9px no-repeat;
   }
 
-.dark-theme .annotation-card-subs .book-price .book-icon a {
+.dark-theme .annotation-card-subs .book-price .book-icon a,
+.dark-theme .book-content .book-button a {
   color:  rgb(0,0,0,0.65);
 }
 
-.dark-theme .main .books .book-button:active,
-.dark-theme .annotation-card-subs .book-price .book-icon:active a,
-.dark-theme .comment-form button:active,
-.dark-theme .annotation-card-subs .book-button:active,
-.dark-theme .reader .paginator .page:active a, 
-.dark-theme .reader .paginator .next:active a,
-.dark-theme .reader .paginator .prev:active a,
-.dark-theme .reader .paginator .hellip:active,
-.dark-theme .registration .reg-form .submit-button:active  {
-  color: rgb(255, 255, 255, 0.65);
-}
 
-.dark-theme .reader .paginator .page  a.current,
+.dark-theme .reader .paginator .page a.current,
 .dark-theme .reader .paginator span.current {
   background-color: #cfd1ec;
 }
@@ -364,6 +345,8 @@ background-color: #27292D;
 .dark-theme .reader .book-content .container p,
 .dark-theme .reader .chapter-content .container p,
 .dark-theme .breadcrumbs a,
+.dark-theme .contents label,
+.dark-theme .size label,
 .dark-theme .signup-heading {
     color: #FFFFFF;
     filter: opacity(65%) contrast(7.2);
@@ -391,17 +374,33 @@ color: rgb(66, 152, 185, 0.85);
 }
 
 
-.dark-theme .main .books .book .book-button :hover,
+.dark-theme .main .book .book-button:hover,
 .dark-theme .annotation-card-subs .book-price .book-button:hover,
 .dark-theme .theme-button:hover,
 .dark-theme .annotation-card-subs .book-price .book-icon:hover,
 .dark-theme .comment-form button:hover,
 .dark-theme .reader .paginator a:hover,
 .dark-theme .reader .paginator span:hover,
-.dark-theme .reader .controls .contents .select:hover  {
+.dark-theme .reader .controls .contents select:hover  {
     background-color: #cfd1ec;
     cursor: pointer;
 }
+
+.dark-theme .book-content .book-button:active a,
+.dark-theme .annotation-card-subs .book-price .book-icon:active a,
+.dark-theme .comment-form button:active,
+.dark-theme .annotation-card-subs .book-button:active,
+.dark-theme .reader .paginator a:active,
+.dark-theme .registration .reg-form .submit-button:active  {
+  color: rgb(255, 255, 255, 0.65);
+}
+
+.dark-theme .page-header a,
+.dark-theme .footer a,
+.dark-theme .main .page-header .top-panel a {
+    color: #FFFFFF;
+    filter: opacity(65%) contrast(7.2);
+    }
 
 .dark-theme .up-button {
     color: #A0A4D9;

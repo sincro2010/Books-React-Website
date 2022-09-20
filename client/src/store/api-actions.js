@@ -1,6 +1,6 @@
 import {ActionCreator} from './action.js';
 import {AuthorizationStatus, AppRoute, HttpCode, Status} from '../common/const.js';
-import {adaptReaderToClient} from './adapter.js';
+import {adaptBookToClient} from './adapter.js';
 
 export const fetchBooksList = () => (dispatch, _getState, api) => (
   api.get('http://localhost:3002/books/get')
@@ -71,7 +71,13 @@ export const logOut = () => (dispatch, _getState, api) => (
   .catch(() => {})
 );
 
-export const changeFavorite = ({id, isFavorite}) => (dispatch, _getState, api) => (
-  api.put('http://localhost:3002/favorites/update', {id, isFavorite})
+export const changeFavorite = ({id, isFavorite, title, image, tags, price, description, rating, isSubscription}) => (dispatch, _getState, api) => (
+  api.put('http://localhost:3002/favorites/update', {id, isFavorite, title, image, tags, price, description, rating, isSubscription}
+  )
     .then((data) => dispatch(ActionCreator.updateFavoriteBook(data)))
+    .catch((err) => {
+      console.log(err);
+      
+    })
+    
 );

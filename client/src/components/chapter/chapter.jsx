@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 const Chapter = (props) => {
 
@@ -13,7 +13,9 @@ const Chapter = (props) => {
     <>
     <article className="chapter-content" style={{fontSize: font + `px`}}>
       <div className="container">
-        {chapterContent}
+        <Fragment>
+        <p>{chapterContent}</p>
+        </Fragment>
       </div>
     </article>
     </>

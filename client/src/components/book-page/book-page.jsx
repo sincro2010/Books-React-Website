@@ -33,6 +33,8 @@ const BookPage = (props) => {
     price,
     description,
     isFavorite,
+    isSubscription,
+    rating
   } = book;
 
   const {id} = useParams();
@@ -92,7 +94,13 @@ const BookPage = (props) => {
                   </button>
                 </div>
                 <time dateTime="2019-12-22">Публикация: 22 декабря 2019</time> 
-              <ButtonIsFavorite isFavorite={isFavorite} id={id}/>
+              <ButtonIsFavorite isFavorite={isFavorite} id={id}  title={title}
+    tags={tags}
+    image={image}
+    price={price}
+    description={description}
+    isSubscription={isSubscription}
+    rating={rating}/>
               </div>
             </div>
 

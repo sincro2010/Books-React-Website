@@ -13,12 +13,11 @@ const deleteBook = (books, deletedBook) => {
   return books.filter((book) => book.id !== deletedBook.id);
 };
 
-export const updateBooks = (books, updatedBook) => {
-  const bookIndex = books.findIndex((book) => book.id === updatedBook.id);
 
-  return [...books.slice(0, bookIndex),
-    updatedBook,
-    ...books.slice(bookIndex + 1)];
+
+
+export const changeFavoriteBooks = (favoriteBooks, updatedBook) => {
+  return updatedBook.isFavorite ? [updatedBook, ...favoriteBooks] : deleteBook(favoriteBooks, updatedBook);
 };
 
 // export const paginateChapters = (chapters, buttonType) => {
@@ -31,7 +30,3 @@ export const updateBooks = (books, updatedBook) => {
 //    return;
 //  };
 // };
-
-export const changeFavoriteBooks = (books, updatedBook) => {
-  return updatedBook.isFavorite ? [updatedBook, ...books] : deleteBook(books, updatedBook);
-};

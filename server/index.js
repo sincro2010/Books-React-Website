@@ -131,7 +131,7 @@ app.get("/reader/get/:id", (req, res) => {
   const isFavorite = req.body.isFavorite;
   const sqlUpdate = "UPDATE books SET isFavorite=? WHERE id=?";
   db.query(sqlUpdate, [isFavorite, id], (err, result) => {
-    if (err) console.log(err);
+    res.send(result);
   }); 
 });
 

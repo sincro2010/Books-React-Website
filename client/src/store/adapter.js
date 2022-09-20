@@ -1,10 +1,6 @@
- export const adaptReaderToClient = (data) => {
-  const adaptedReader = Object.assign(
-    [],
-      [
-     {...data}
- 
-      ]
-  );
-  return adaptedReader;
+ export const adaptBookToClient = (book) => {
+  const adaptedBook = {
+     ...book
+  };
+  return adaptedBook;
  }
